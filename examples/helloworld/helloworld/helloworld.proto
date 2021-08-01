@@ -48,10 +48,12 @@ service Greeter {
 
 // The request message containing the user's name.
 message HelloRequest {
+  // name is name
   string name = 1;
 }
 
 // The response message containing the greetings
 message HelloReply {
+	// reply is SayHello reply
   reply.Reply reply = 1;
 }
