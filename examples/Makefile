@@ -1,8 +1,8 @@
-PROTO_FILES=$(shell find . -name *.proto)
+PROTO_FILES=$(shell find ./helloworld -name *.proto)
 
-.PHONY: proto
-# generate proto
-proto:
+.PHONY: helloworld
+# generate helloworld proto
+helloworld:
 	protoc --proto_path=./helloworld \
                 --proto_path=../third_party \
                 --go_out=paths=source_relative:./helloworld \
